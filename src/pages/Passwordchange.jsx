@@ -32,7 +32,7 @@ const Passwordchange = () => {
                 if (response.ok) {
                     return response.json();
 
-                } else if (response.status === 404) {
+                } else if (response.status === 404 || 500) {
                     throw new Error('Server responded with Status:${response.status')
                 }
             })
