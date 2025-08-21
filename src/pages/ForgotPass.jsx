@@ -45,8 +45,6 @@ const ForgotPass = () => {
             <button className="absolute top-[-30px] left-[10%] right-[10%] text-sm p-1 bg-lime-300 rounded-full text-white font-semibold">Forgot Your Password</button>
             <p id="Note" className="text-[10px] text-center hidden text-red-500">Check your Mail & click the reset password Link </p>
             <p id="Noted" className="text-xs text-center hidden text-red-500">Issue with the Server try after sometime!!!</p>
-            <Link to={"/passwordchange/shdhfk"}>change</Link>
-
         </form>
     </div>
 }
