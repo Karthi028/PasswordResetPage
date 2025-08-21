@@ -11,7 +11,7 @@ const ForgotPass = () => {
         e.preventDefault();
         console.log(email)
 
-        const response = fetch('http://localhost:3000/api/v1/forget-password', {
+        const response = fetch('https://passwordreset-dnbd.onrender.com/api/v1/forget-password', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

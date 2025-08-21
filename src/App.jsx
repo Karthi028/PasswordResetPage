@@ -14,7 +14,7 @@ const routes = [
   {
     path: '/forgot',
     element: <ForgotPass />,
-  },
+  }, 
   {
     path: '/passwordchange/:token',
     element: <Passwordchange />

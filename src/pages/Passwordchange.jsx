@@ -21,7 +21,7 @@ const Passwordchange = () => {
         tag.classList.add('hidden');
         const NewPassword = { password: password }
 
-        const response = fetch(`http://localhost:3000/api/v1/reset-password/${token}`, {
+        const response = fetch(`https://passwordreset-dnbd.onrender.com/api/v1/reset-password/${token}`, {
             method: "POST",
             headers: {
                 'Content-type': 'application/json'
