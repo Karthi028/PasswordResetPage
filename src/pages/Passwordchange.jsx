@@ -29,7 +29,12 @@ const Passwordchange = () => {
             body: JSON.stringify(NewPassword)
         })
             .then((response) => {
-                return response.json()
+                if (response.ok) {
+                    return response.json();
+
+                } else if (response.status === 404) {
+                    throw new Error('Server responded with Status:${response.status')
+                }
             })
             .then((data) => {
                 console.log(data)
@@ -51,7 +56,7 @@ const Passwordchange = () => {
             <input className="p-1 border border-lime-300 rounded-xl text-gray-400" type="password" placeholder="Confirm Your Password..." required value={confirm} onChange={(e) => setconfirm(e.target.value)} />
             <button className="mt-1 top-6 text-xs font-semibold italic bg-orange-300 hover:scale-115 text-white p-1 rounded-full">Reset Password</button>
             <p id="hide" className="text-red-500 text-sm font-semibold hidden">Password doest not match!!!!</p>
-            <p id="Noted" className="text-xs text-center hidden text-red-500">Error While Changing Password Try Later...</p>
+            <p id="Noted" className="text-xs text-center hidden text-red-500">Error While Changing Password or Incorrect Token in Url...Try later</p>
         </form>
         <button className="absolute top-16 text-sm font-semibold italic bg-white border border-lime-400 p-1 rounded-full">Reset password</button>
 
