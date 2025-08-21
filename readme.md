@@ -13,11 +13,13 @@ this page dosent have any user untraction feature ...the main goal or the task f
 
 
 ""
-TO ENTER TO THE RESET password Page Use this LINK: "https://resetpasswordpage.netlify.app/passwordchange/${randomString}" 
+TO ENTER TO THE RESET password Page Use this LINK: "https://resetpasswordpage.netlify.app/passwordchange/${randomString}"
 
-where the randomString will be available in the forgeot password page console once you enter the Email ....
+Only For Auditing Purpose : RandomString is Made be consoled in the Browser
+
+where the randomString will be available in the browser console once you enter the register User Email in the forget password page ....
 In Database the available user Email is "karthi@guvi.com"
-once entering this you will recive the RandomString in the Console...
+once entering this you will recive the RandomString in the browser Console...
 
 ""
 
