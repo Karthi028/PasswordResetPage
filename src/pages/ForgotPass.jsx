@@ -53,6 +53,14 @@ const ForgotPass = () => {
             <p id="Noted" className="text-xs text-center hidden text-red-500">Issue with the Server try after sometime..</p>
 
         </form>
+
+        <div className="absolute left-[30px] bottom-20">
+            <p className="text-blue-400 text-sm">"For Validation purpose only in case of non Existing</p>
+            <p className="text-blue-400  text-sm">Mail Id provided while registering"</p>
+            <p className="text-blue-400 text-sm">"use the <span className="text-red-400">token</span> available in the console after sending mail in below URL"</p>
+            <p className="text-red-600 text-sm">"https://passwordreset-dnbd.onrender.com/api/v1/reset-password/token" "</p>
+
+        </div>
     </div>
 }
 

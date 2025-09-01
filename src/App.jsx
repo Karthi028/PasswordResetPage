@@ -1,14 +1,15 @@
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import './App.css'
-import Login from './pages/Login'
 import ForgotPass from './pages/ForgotPass'
 import Passwordchange from './pages/Passwordchange'
+import Register from './pages/Register'
+import Login from './pages/Login'
 
 
 const routes = [
   {
     path: '/',
-    element: <Login />
+    element: <Register/>
   },
   {
     path: '/forgot',
@@ -17,6 +18,10 @@ const routes = [
   {
     path: '/passwordchange/:token',
     element: <Passwordchange />
+  },
+  {
+    path:'/login',
+    element:<Login/>
   }
 ]
 
