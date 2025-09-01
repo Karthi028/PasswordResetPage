@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router"
 
-const API_ENDPOINT = "http://localhost:3000/api/v1/register";
+const API_ENDPOINT = "https://passwordreset-dnbd.onrender.com/api/v1/register";
 
 const Register = () => {
   // State variables to store form input data and the submission status.
