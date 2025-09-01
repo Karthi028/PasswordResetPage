@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router"
 
 const API_ENDPOINT_LOGIN = "http://localhost:3000/api/v1/login";
-const API_ENDPOINT_LOGOUT = "http://localhost:3000/api/v1/logout";
+const API_ENDPOINT_LOGOUT = "https://passwordreset-dnbd.onrender.com/api/v1/logout";
 
 const Login = () => {
     const [email, setEmail] = useState('');
