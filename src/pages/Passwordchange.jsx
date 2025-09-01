@@ -39,7 +39,7 @@ const Passwordchange = () => {
             .then((data) => {
                 console.log(data)
                 alert("Password Changed Successfully");
-                navigate('/');
+                navigate('/login');
             })
             .catch((err) => {
                 console.log(err.message)

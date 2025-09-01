@@ -58,7 +58,7 @@ const ForgotPass = () => {
             <p className="text-blue-400 text-sm">"For Validation purpose only in case of non Existing</p>
             <p className="text-blue-400  text-sm">Mail Id provided while registering"</p>
             <p className="text-blue-400 text-sm">"use the <span className="text-red-400">token</span> available in the console after sending mail in below URL"</p>
-            <p className="text-red-600 text-sm">"https://passwordreset-dnbd.onrender.com/api/v1/reset-password/token" "</p>
+            <p className="text-red-600 text-sm">"https://resetpasswordpage.netlify.app/passwordchange/token" "</p>
 
         </div>
     </div>
